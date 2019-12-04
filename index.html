@@ -7,33 +7,110 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.typekit.net/oxj1cak.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/simple_inverted_blue.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Simple Layout</title>
 </head>
 
 <body>
+
+    <a href="#main" class="skip">Skip to Content</a>
+
     <nav role="navigation" aria-label="Main">
         <header>
             <figure>
-                <img src="images/simple.svg" alt="Logo">
+                <a href="#" title="Home"><img src="images/simple_white.svg" alt="Logo"></a>
             </figure>
-            <h2>Simple.</h2>
+            <h2>Simple<span class="big">.</span></h2>
         </header>
         <ul class="navigation">
-            <li class="navigation-link"><a href="#typo">Typography</a></li>
-            <li class="navigation-link"><a href="#colors">Color Pallete</a></li>
-            <li class="navigation-link"><a href="#elements">Elements</a></li>
-            <li class="navigation-link"><a href="#others">Other Templates</a></li>
+            <li class="navigation-link"><a href="#typo"><i class="material-icons">font_download</i>Typography</a></li>
+            <li class="navigation-link"><a href="#colors"><i class="material-icons">color_lens</i>Color Pallete</a></li>
+            <li class="navigation-link"><a href="#elements"><i class="material-icons">view_list</i>Elements</a></li>
+            <li class="navigation-link"><a href="#"><i class="material-icons">brightness_low</i>Dark Mode</a></li>
         </ul>
     </nav>
 
     <section class="hero">
         <header role="banner">
-            <h1>Simple Layout</h1>
+            <h1>Simple<span class="big">.</span> Layout</h1>
 
-            <p>A simple website layout that can be used anywhere.</p>
+            <figure>
+                <img src="images/simple_inverted_blue.svg" alt="Logo">
+            </figure>
+
+            <p>A simple website layout that can be used for any purpose.</p>
         </header>
     </section>
 
+    <main role="main" id="main">
+        <article role="article">
+            <header>
+                <h2>Simple. Layout</h2>
+                <p class="border">This lay-out consists of HTML, SCSS, and vanilla JavaScript. It can be used anywhere, for any
+                    project.
+                    Customize the variables to automatically change all the colors necessary.
+                </p>
+                <h3>Features</h3>
+
+                <ul>
+                    <li>Customizable colors</li>
+                    <li>Semantic HTML</li>
+                    <li>Fully Accessible (for screen readers and keyboard navigation)</li>
+                    <li>Responsive HTML</li>
+                    <li>Styling on all objects</li>
+                    <li>Scrolling Effects</li>
+                    <li>Google Material Icons</li>
+                    <li>CSS Transitions and Animations</li>
+                    <li>Dark Mode</li>
+                </ul>
+            </header>
+            <h2 id="typo">Typography</h2>
+
+            <p class="display-heading">Headings: Abril Display</p>
+
+            <p>Paragraphs, lists, links and figcaptions: Acumin Pro</p>
+
+            <p class="special">Special: Flood</p>
+
+            <h2 id="colors">Color Pallete</h2>
+
+            <p>The following colors are included in the variables, but can be changed to desirable colors:</p>
+            <div class="display">
+                <div class="display-colors black">
+                    <p class="special type-white">Smoky Black</p>
+                </div>
+                <div class="display-colors grey">
+                    <p class="special type-white">Outer Space</p>
+                </div>
+                <div class="display-colors white">
+                    <p class="special type-black">Anti-Flash White</p>
+                </div>
+                <div class="display-colors blue">
+                    <p class="special type-white">Cornflower Blue</p>
+                </div>
+                <div class="display-colors dark-blue">
+                    <p class="special type-white">Blue Sapphire</p>
+                </div>
+            </div>
+
+            <h2 id="elements">Elements</h2>
+
+            <p>The following Elements are included:</p>
+
+            <ol>
+                <li>Navigation Styles</li>
+                <li>Header Styles</li>
+                <li>Different Page Styles</li>
+                <li>Gallery</li>
+                <li>Dark Mode Feature</li>
+                <li>Handmade Isometric SVG Images</li>
+                <li>Typography Styles</li>
+                <li></li>
+            </ol>
+        </article>
+    </main>
+    <script src="dark-mode.js"></script>
 </body>
 
 </html>

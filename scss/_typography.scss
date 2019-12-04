@@ -37,16 +37,24 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "abril-display", serif;
+    font-weight: 400;
+    margin: 1rem 0;
 }
 
 p, ul, ol, figcaption, a {
     font-family: "acumin-pro", sans-serif;
+    font-weight: 400;
     max-width: 65ch;
     line-height: 1.5rem;
 }
 
 .special {
     font-family: "flood-std", sans-serif;
+}
+
+.display-heading {
+    font-family: "abril-display", serif;
+    font-weight: 400;
 }
 
 /* Colors */
@@ -69,4 +77,20 @@ p, ul, ol, figcaption, a {
 
 .dark-blue {
     color: $dark-blue;
+}
+
+/* Article Styles */
+
+article {
+    h1, h2, h3, h4, h5, h6 {
+        margin-left: 1rem;
+    }
+    p, ol, ul, .display, .special {
+        margin-left: 1rem;
+        padding-left: 2rem;
+    }
+
+    .border {
+        border-left: 0.2rem dotted $dark-blue;
+    }
 }

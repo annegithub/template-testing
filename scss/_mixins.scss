@@ -12,38 +12,82 @@
     justify-content: space-between;
 }
 
+@mixin flex-space-around {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
 @mixin navigation {
     @include flex-space-between;
     color: $grey;
-    padding: 0 2rem;
+    padding: .5rem 2rem;
 
     header {
         @include flex-center;
-    }
+        h2 {
+            font-weight: 400;
+            margin: 0 0 0 .5rem;
+            align-self: center;
 
-    ul {
-        @include flex-space-between;
-        flex-basis: 80%;
-        flex-grow: 1;
-        flex-shrink: 0;
-        li {
-            list-style: none;
-            cursor: pointer;
-            padding: 1rem;
-            background-color: $blue;
-            a {
+            .big {
+                font-size: 5rem;
                 text-decoration: none;
-                color: $white;
-                text-transform: uppercase;
+                color: $blue;
+            }
+        }
+        figure {
+            @include flex-center;
+            margin: 0;
+        }
+    
+        img {
+            max-width: 3rem;
+            background-color: $blue;
+            padding: 1rem;
+            border-radius: 50%;
+            transition: background-color 0.5s ease-in;
+
+            &:hover, &:focus {
+                background-color: $grey;
             }
         }
     }
 
-    figure {
+    ul {
         @include flex-center;
-    }
+        padding: 0;
+        margin: 0;
 
-    img {
-        max-width: 3rem;
+        li + li {
+            margin-left: 0.2rem;
+        }
+
+        li {
+            list-style: none;
+            padding: 0;
+            a, button {
+                border: none;
+                text-decoration: none;
+                color: $white;
+                text-transform: uppercase;
+                padding: .5rem;
+                background-color: $blue;
+                transition: background-color 0.5s ease-in;
+
+                i {
+                    font-size: 1rem !important;
+                    position: relative;
+                    top: 25%;
+                    transform: translateY(-25%);
+                    margin-right: 0.2rem;
+                }
+
+                &:hover {
+                    background-color: $grey;
+                }
+            }
+        }
     }
 }
