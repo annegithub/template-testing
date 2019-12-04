@@ -1,0 +1,49 @@
+@mixin flex-center {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+@mixin navigation {
+    @include flex-space-between;
+    color: $grey;
+    padding: 0 2rem;
+
+    header {
+        @include flex-center;
+    }
+
+    ul {
+        @include flex-space-between;
+        flex-basis: 80%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        li {
+            list-style: none;
+            cursor: pointer;
+            padding: 1rem;
+            background-color: $blue;
+            a {
+                text-decoration: none;
+                color: $white;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    figure {
+        @include flex-center;
+    }
+
+    img {
+        max-width: 3rem;
+    }
+}

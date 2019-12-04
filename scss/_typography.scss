@@ -1,0 +1,72 @@
+
+/* Sizes */
+
+html {
+    font-size: 100%;
+
+    @media (min-width: 768px) {
+        font-size: 112.5%; // = 18 pixels in most browsers
+      }
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.3rem;
+}
+
+/* Font Families */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "abril-display", serif;
+}
+
+p, ul, ol, figcaption, a {
+    font-family: "acumin-pro", sans-serif;
+    max-width: 65ch;
+    line-height: 1.5rem;
+}
+
+.special {
+    font-family: "flood-std", sans-serif;
+}
+
+/* Colors */
+
+.black {
+    color: $black;
+}
+
+.grey {
+    color: $grey;
+}
+
+.white {
+    color: $white;
+}
+
+.blue {
+    color: $blue;
+}
+
+.dark-blue {
+    color: $dark-blue;
+}
